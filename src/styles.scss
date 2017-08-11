@@ -4,3 +4,8 @@
  /*@import '~@angular/material/_theming';
  @import '~material-design-icons/iconfont/material-icons.css';
  @import '~@angular/material/prebuilt-themes/indigo-pink.css';*/
+ .spacer {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+}
