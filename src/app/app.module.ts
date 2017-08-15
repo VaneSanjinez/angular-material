@@ -1,12 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {MaterialModule} from '@angular/material';
 import { FormsModule } from '@angular/forms';
+import { MdToolbarModule, MdIconModule } from '@angular/material';
 import { HttpModule } from '@angular/http';
-
+import { RouterModule }   from '@angular/router';
 
 import { AppComponent } from './app.component';
+import {MdButtonModule, MdCheckboxModule} from '@angular/material';
 import 'hammerjs';
+import { PetListComponent } from './pet-list/pet-list.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,13 @@ import 'hammerjs';
     BrowserModule,
     FormsModule,
     HttpModule,
-    MaterialModule // <--Add this
+    //MaterialModule,
+    MdButtonModule, MdCheckboxModule,
+    MdToolbarModule,
+    MdIconModule
+     // <--Add this
+  ],
+  exports:[
   ],
   providers: [],
   bootstrap: [AppComponent]

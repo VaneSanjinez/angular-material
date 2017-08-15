@@ -21,3 +21,8 @@ label {
 #page-padding {
     padding: 0 1.5em 1.5em 1.5em;
 }
+.fill-space {
+  /* This fills the remaining space, by using flexbox.
+   Every toolbar row uses a flexbox row layout.*/
+  flex: 1 1 auto;
+}
