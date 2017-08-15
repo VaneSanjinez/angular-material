@@ -6,9 +6,9 @@ import { HttpModule } from '@angular/http';
 import { RouterModule }   from '@angular/router';
 
 import { AppComponent } from './app.component';
-import {MdButtonModule, MdCheckboxModule} from '@angular/material';
+import {MdButtonModule, MdCheckboxModule, MdCardModule} from '@angular/material';
 import 'hammerjs';
-import { PetListComponent } from './pet-list/pet-list.component';
+import { PetModule } from './pet/pet.module';
 
 @NgModule({
   declarations: [
@@ -21,8 +21,10 @@ import { PetListComponent } from './pet-list/pet-list.component';
     //MaterialModule,
     MdButtonModule, MdCheckboxModule,
     MdToolbarModule,
-    MdIconModule
-     // <--Add this
+    MdCardModule,
+    MdIconModule,
+    PetModule
+  
   ],
   exports:[
   ],

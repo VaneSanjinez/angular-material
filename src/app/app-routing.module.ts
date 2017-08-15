@@ -1,15 +1,18 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { PetListComponent } from './pet-list/pet-list.component';
 
 const routes: Routes = [
-  {
-    path: '/', component: PetListComponent
-  }
+    {path: '/', component: PetListComponent},
 ];
 
 @NgModule({
-  imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+    imports: [
+        RouterModule.forRoot(routes)
+    ],
+    exports: [
+        RouterModule
+    ],
+    declarations: []
 })
 export class AppRoutingModule { }

@@ -9,6 +9,9 @@ md-card {
   text-align: center;
 }
 
+md-toolbar-row {
+  justify-content: space-between;
+}
 
 .done {
   position: fixed;
